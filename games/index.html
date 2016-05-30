@@ -1,0 +1,89 @@
+
+
+<!-- 
+| \| (_)__| |_  ___| |___  | _ )_ _ _____ __ ___ _ (_)___ 
+| .` | / _| ' \/ _ \ / -_) | _ \ '_/ _ \ V  V / ' \| / -_)
+|_|\_|_\__|_||_\___/_\___| |___/_| \___/\_/\_/|_||_|_\___| -->
+
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+
+
+.shakeimage{
+position:relative}
+</style>
+<script language="JavaScript1.2">
+//configure shake degree (where larger # equals greater shake)
+var rector=1
+var stopit=0
+var a=1
+function init(which){
+stopit=0
+shake=which
+shake.style.left=0
+shake.style.top=0}
+function rattleimage(){
+if ((!document.all&&!document.getElementById)||stopit==1) return
+if (a==1){
+shake.style.top=parseInt(shake.style.top)+rector+"px"}
+else if (a==2){
+shake.style.left=parseInt(shake.style.left)+rector+"px"}
+else if (a==3){
+shake.style.top=parseInt(shake.style.top)-rector+"px"}
+else{
+shake.style.left=parseInt(shake.style.left)-rector+"px"} if (a<4)
+a++
+else
+a=1
+setTimeout("rattleimage()",50)}
+function stoprattle(which){
+stopit=1
+which.style.left=0
+which.style.top=0}
+</script>
+
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Games</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="resources/js/verticalcenter.js"></script>
+		<script type="text/javascript" src="resources/js/functions.js"></script>
+		<script type="text/javascript" src="resources/js/main.js"></script>
+		<link rel="stylesheet" href="/main.css" />
+		<LINK REL="SHORTCUT ICON"
+       HREF="/resources/img/favicon.ico">
+       <!-- jQuery Javascript Load -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	</head>
+	<body>
+
+    <!-- My Name Straya -->
+<div id="light">
+<a class="light">Games</a> 
+<div>
+
+<!-- Barcode -->
+<div id="code">
+<a class="code">Electric Snake Invaders Man</a>
+</div>
+		<br />
+ <!-- Profile Links -->
+<script type="text/javascript">
+ $("profiles").fadeIn(slow);
+ </script>
+<div class="fade"
+<div id="profiles">
+
+<!-- ElectricMan --> <a href="/games/electricman"> <img src="media/electric.png" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()" border="0" width="16.6%"  /></a>
+<!-- Snake --> <a href="/games/snake"> <img src="media/snake.png" onload="$(this).fadeIn(2000);"class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()" border="0" width="16.6%"/></a>
+<!-- SpaceInvaders --> <a href="/games/spaceinvaders"> <img src="media/invaders.png" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()"
+ border="0" width="16.6%" /></a>
+ <!-- Pac-Man --> <a href="/games/pacman"> <img src="media/pacman.png" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()"
+ border="0" width="16.6%" /></a>
+ <br />
+</div>
+</div>
+</html>
