@@ -4,6 +4,27 @@
     margin: 0;
     padding: 0;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
+
+::-ms-scrollbar {
+    display: none;
+}
+
+::-khtml-scrollbar {
+    display: none;
+}
+
+::scrollbar {
+    display: none;
+}
+
 @media only screen and (min-width: 992px) {
     .desktop-only {
         display: block !important;
@@ -12,6 +33,7 @@
         display: none !important;
     }
 }
+
 @media only screen and (max-width: 991px) {
     .mobile-only {
         display: block !important;
@@ -20,7 +42,9 @@
         display: none !important;
     }
 }
-html, body {
+
+html,
+body {
     width: 100%;
     height: 100%;
     -webkit-touch-callout: none;
@@ -29,24 +53,31 @@ html, body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-family: sans-serif;
 }
+
 body {
     z-index: -2;
     margin: 0;
     background-color: #ecf0f1;
 }
+
 .container {
     width: 85%;
     margin: auto;
 }
+
 .mobilecontainer {
     width: 85%;
     margin: auto;
 }
-img.responsive-img, video.responsive-video {
+
+img.responsive-img,
+video.responsive-video {
     max-width: 100%;
     height: auto;
 }
+
 
 /*End Entire Website*/
 
@@ -58,16 +89,19 @@ nav img {
     height: auto;
     width: auto;
 }
+
 ul {
     list-style-type: none;
     display: inline-block;
 }
+
 nav ul {
     font-family: 'Roboto';
     text-transform: uppercase;
     font-weight: 500;
     margin: auto;
 }
+
 nav li {
     float: left;
     margin-left: 40px;
@@ -76,50 +110,61 @@ nav li {
     -moz-transition: .5s;
     -webkit-transition: .5s;
 }
+
 nav h2 {
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-size: 2vw;
 }
+
 .nav h2 {
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
 }
+
 nav {
     height: 80px;
     line-height: 80px;
 }
+
 .nav {
     height: 80px;
     line-height: 80px;
 }
+
 .links {
     display: inline-block;
     float: right;
 }
+
 .logo {
     width: 400px;
     display: inline-block;
 }
+
 .navlogo {
     width: 80%;
     display: inline-block;
     float: left;
 }
+
 .links ul li:hover {
     color: rgba(45, 45, 45, 1);
 }
+
 .hamburger {
     color: #fff;
     display: inline-block;
     float: right;
     font-size: 1.5rem;
 }
+
 
 /*End Navigation Bar*/
 
@@ -135,6 +180,7 @@ nav {
     visibility: visible;
     -webkit-backface-visibility: hidden;
 }
+
 @-webkit-keyframes fade-in {
     0% {
         opacity: 0;
@@ -143,6 +189,7 @@ nav {
         opacity: 1;
     }
 }
+
 @-moz-keyframes fade-in {
     0% {
         opacity: 0
@@ -151,6 +198,7 @@ nav {
         opacity: 1
     }
 }
+
 @-o-keyframes fade-in {
     0% {
         opacity: 0
@@ -159,6 +207,7 @@ nav {
         opacity: 1
     }
 }
+
 @keyframes fade-in {
     0% {
         opacity: 0
@@ -167,6 +216,7 @@ nav {
         opacity: 1
     }
 }
+
 .bg-fade-in {
     -webkit-animation: fade-in 3s ease;
     -moz-animation: fade-in ease-in-out 2s both;
@@ -176,6 +226,7 @@ nav {
     visibility: visible;
     -webkit-backface-visibility: hidden;
 }
+
 @-webkit-keyframes bg-fade-in {
     0% {
         opacity: 0;
@@ -184,6 +235,7 @@ nav {
         opacity: 1;
     }
 }
+
 @-moz-keyframes bg-fade-in {
     0% {
         opacity: 0
@@ -192,6 +244,7 @@ nav {
         opacity: 1
     }
 }
+
 @-o-keyframes bg-fade-in {
     0% {
         opacity: 0
@@ -200,6 +253,7 @@ nav {
         opacity: 1
     }
 }
+
 @keyframes bg-fade-in {
     0% {
         opacity: 0
@@ -208,6 +262,7 @@ nav {
         opacity: 1
     }
 }
+
 
 /*End Transitions*/
 
@@ -219,33 +274,49 @@ nav {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: url(/img/bg/random.php) no-repeat center center;
+    background: url(/img/bg/6.jpg) no-repeat center right;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
 }
+
 .hero-desktop img {
     width: 100%;
 }
+
 .hero-desktop {
     width: 600px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 35%;
     margin: -100px 0 0 -300px;
 }
+
 .hero-mobile {
     position: absolute;
     width: 75%;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -35%);
 }
+
 .hero-mobile img {
     width: 100%;
 }
 
+.wall {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: url"/img/bg/wall.jpg";
+  background: url(/img/bg/wall.jpg) no-repeat center right;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+}
 /*End Home*/
 
 
@@ -260,6 +331,7 @@ nav {
     -o-background-size: cover;
     -moz-background-size: cover;
 }
+
 .about_header h1 {
     font-family: 'Roboto';
     font-weight: 700;
@@ -267,6 +339,7 @@ nav {
     font-size: 4em;
     text-transform: uppercase;
 }
+
 .about_header {
     border: 9px solid #fff;
     width: 300px;
@@ -274,10 +347,12 @@ nav {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .about_spacer {
     height: 30px;
     width: 100%;
 }
+
 
 /*End About*/
 
@@ -293,6 +368,7 @@ nav {
     -o-background-size: cover;
     -moz-background-size: cover;
 }
+
 .profile-picture {
     height: 150px;
     width: 150px;
@@ -304,6 +380,7 @@ nav {
     border-bottom-left-radius: 25%;
     border-top-right-radius: 25%;
 }
+
 .portfolio_header h1 {
     font-family: 'Roboto';
     font-weight: 700;
@@ -311,6 +388,7 @@ nav {
     font-size: 4em;
     text-transform: uppercase;
 }
+
 .portfolio_header_mobile h1 {
     font-family: 'Roboto';
     font-weight: 700;
@@ -318,6 +396,7 @@ nav {
     font-size: 4em;
     text-transform: uppercase;
 }
+
 .portfolio_header {
     border: 9px solid #fff;
     width: 450px;
@@ -325,6 +404,7 @@ nav {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .portfolio_header_mobile {
     border: 9px solid #fff;
     width: 85%;
@@ -332,10 +412,12 @@ nav {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .portfolio_image_holder img {
     height: 100%;
     width: 100%;
 }
+
 .portfolio_text p {
     font-family: 'Roboto';
     font-weight: 300;
@@ -343,4 +425,98 @@ nav {
     text-transform: uppercasdse;
 }
 
+
 /*End Portfolio*/
+
+#portfolio_links {
+    height: 100%;
+    width: 98%;
+    overflow: auto;
+}
+
+.hero-desktop h2 {
+    color: #fff;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.hero-desktop video {
+    -webkit-box-shadow: 0px 8px 104px -10px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 8px 104px -10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 8px 104px -10px rgba(0, 0, 0, 0.9);
+}
+
+.hero-desktop a p {
+    color: #fff;
+    font-family: 'Montserrat';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding-top: 20px;
+    z-index: 90909
+}
+
+.hero-mobile h2 {
+    color: #fff;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.hero-mobile video {
+    -webkit-box-shadow: 0px 8px 104px -10px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 8px 104px -10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 8px 104px -10px rgba(0, 0, 0, 0.9);
+}
+
+.hero-mobile a p {
+    color: #fff;
+    font-family: 'Montserrat';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 20px;
+    z-index: 90909
+}
+
+.vimeoXtra {
+    display: block;
+    width: 638px;
+    height: 558px;
+    margin: 0 auto;
+}
+
+.vimeoFrame {
+    width: 638px;
+    height: 358px;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 10px 55px 0px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 0px 10px 55px 0px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 10px 55px 0px rgba(0, 0, 0, 0.82);
+}
+
+.vimeoFrame .vimeoXtra {
+    margin-top: -100px;
+}
+
+.vimeoFrame .vimeoXtra {
+    margin-top: -100px;
+}
+.social {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    bottom: 50px;
+    position: absolute;
+    text-align: center;
+    color: #2d2d2d;
+    font-size: 2.2em;
+}
+
+.social i {
+    padding-left: 10px;
+}
