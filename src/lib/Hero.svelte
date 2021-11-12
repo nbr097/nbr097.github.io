@@ -1,4 +1,3 @@
-<!-- hero -->
 <section style="min-height: 50vh;" class="select-none">
 	<div
 		class="w-full h-screen bg-no-repeat bg-cover bg-top grid justify-center items-center overflow-x-hidden"
@@ -10,7 +9,7 @@
 			muted
 			loop
 		>
-			<source src="//www.beta.nicholasbrown.me/img/video.mp4" type="video/mp4" />
+			<source src="/video/video.mp4" type="video/mp4" />
 		</video>
 
 		<div
@@ -25,4 +24,3 @@
 		</div>
 	</div>
 </section>
-<!-- hero -->
