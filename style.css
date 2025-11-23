@@ -680,7 +680,10 @@ nav a:hover {
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    /* Smaller to fit single line */
+    white-space: nowrap;
+    /* Force single line if possible, or let it wrap naturally if too small */
   }
 
   .about-content {
@@ -692,7 +695,31 @@ nav a:hover {
   }
 
   header {
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  /* Simplify Glitch on Mobile to prevent misalignment */
+  .glitch::before,
+  .glitch::after {
+    display: none;
+    /* Hide the clipping layers on mobile */
+  }
+
+  .glitch {
+    animation: glitch 2s infinite;
+    /* Keep the color flicker */
   }
 }
 

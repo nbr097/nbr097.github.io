@@ -224,14 +224,8 @@ window.addEventListener('load', () => {
 // RE-WRITING startDecoding to be robust
 function startDecoding() {
     const h1 = document.querySelector('.hero h1');
-    // Wrap lines in spans to decode separately
-    h1.innerHTML = `<span class="line-1">Nicholas</span><br><span class="line-2">Brown</span>`;
-
-    const line1 = h1.querySelector('.line-1');
-    const line2 = h1.querySelector('.line-2');
-
-    decodeElement(line1, "Nicholas");
-    setTimeout(() => decodeElement(line2, "Brown"), 500);
+    const text = "Nicholas Brown";
+    decodeElement(h1, text);
 }
 
 function decodeElement(element, finalText) {
