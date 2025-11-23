@@ -686,6 +686,12 @@ nav a:hover {
     /* Force single line if possible, or let it wrap naturally if too small */
   }
 
+  .hero p {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    padding: 0.3rem 0.8rem;
+  }
+
   .about-content {
     grid-template-columns: 1fr;
   }
