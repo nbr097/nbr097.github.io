@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brown Media</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-text">INITIALIZING SYSTEM...</div>
+  </div>
+
+  <header>
+    <div class="logo">BROWN <span>// </span>MEDIA</div>
+    <nav>
+      <ul>
+        <li><a href="#work">Work</a></li>
+
+        <li><a href="#about">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <video muted loop playsinline id="hero-video">
+          <source src="https://github.com/nbr097/nbr097.github.io/raw/refs/heads/master/static/video/video.mp4"
+            type="video/mp4">
+        </video>
+        <div class="scanlines"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="glitch" data-text="Nicholas Brown">Nicholas<br>Brown</h1>
+        <p>Videographer • Editor • Creative</p>
+      </div>
+    </section>
+    <!--
+    <div class="marquee-separator">
+      <div class="marquee-content">
+        BRISBANE BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE
+        BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE
+        BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE
+        BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE BASED • EVENTS • COMMERCIAL • CREATIVE • BRISBANE
+        BASED • EVENTS • COMMERCIAL • CREATIVE •
+      </div>
+    </div>
+  -->
+    <div style="min-height: 5rem;"></div>
+
+    <section id="work" class="container">
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Portfolio items injected here -->
+      </div>
+    </section>
+
+
+    <section id="about" class="container fade-in-section" style="padding-top:5rem;padding-bottom: 5rem;">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="/public/nicholas-brown.jpg" alt="Nicholas Brown"
+            style="width: 70%; aspect-ratio: 1; object-fit: cover; border-radius: 0.5rem; transition: filter 0.3s; margin: 0 auto; display: block;">
+        </div>
+        <div class="about-text">
+          <h2>READY TO CREATE?</h2>
+          <a href="mailto:contact@nicholasbrown.me" class="email-link">CONTACT@NICHOLASBROWN.ME</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="video-container">
+        <div id="modal-iframe"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Scrollbar -->
+  <div id="custom-scrollbar">
+    <div class="thumb"></div>
+  </div>
+
+  <div class="film-grain"></div>
+
+  <footer>
+    <div class="container glitch" data-text="&copy; NICHOLAS BROWN MEDIA 2025"
+      style="text-align: center; padding: 2rem; color: #555; font-size: 0.8rem;">
+      &copy; NICHOLAS BROWN MEDIA 2025
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
