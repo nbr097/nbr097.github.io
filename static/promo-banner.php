@@ -4,11 +4,11 @@ date_default_timezone_set('Australia/Brisbane');
 
 // Set the promotion end date (adjust as needed)
 // This will now use AEST/AEDT automatically based on daylight saving
-$endDate = strtotime('2026-01-025 23:59:59'); // End of Jan 25, 2026
+$endDate = strtotime('2026-01-25 23:59:59'); // End of February 1, 2026
 $today = time();
 
 // Set proper image headers
-header('Content-Type: image/jpg');
+header('Content-Type: image/jpeg');
 header('Cache-Control: no-cache, no-store, must-revalidate');
 header('Pragma: no-cache');
 header('Expires: 0');
