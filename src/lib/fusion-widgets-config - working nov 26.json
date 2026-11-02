@@ -1,0 +1,463 @@
+{
+  "exportType" : "fusionWidgets",
+  "exportVersion" : 1,
+  "requiredAddons" : [
+    "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json"
+  ],
+  "widgets" : [
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "tmdbDiscover",
+        "payload" : {
+          "releaseChannel" : "digital",
+          "releaseStatus" : "released",
+          "sortBy" : "popularity.desc",
+          "type" : "movie",
+          "voteCountGTE" : 30
+        }
+      },
+      "id" : "starter.new.digital",
+      "limit" : 20,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : true,
+          "ratings" : true
+        },
+        "cardStyle" : "large"
+      },
+      "sort" : "popularity.desc",
+      "title" : "Recently Released",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 1800,
+      "dataSource" : {
+        "kind" : "tmdbDiscover",
+        "payload" : {
+          "limit" : 10,
+          "releaseChannel" : "digital",
+          "releaseStatus" : "released",
+          "sortBy" : "trending.week",
+          "type" : "movie",
+          "voteCountGTE" : 50
+        }
+      },
+      "id" : "discover.1F6B796B-7F0F-4D85-9277-14C2274EB4F2",
+      "limit" : 10,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "sort" : "trending.week",
+      "title" : "Top 10 Movies This Week",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "tmdbDiscover",
+        "payload" : {
+          "limit" : 10,
+          "sortBy" : "trending.week",
+          "type" : "tv",
+          "voteCountGTE" : 100
+        }
+      },
+      "id" : "starter.numbered.tv.weekly",
+      "limit" : 10,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "sort" : "trending.week",
+      "title" : "Top 10 TV Series This Week",
+      "type" : "row.classic.numbered"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "addonCatalog",
+        "payload" : {
+          "addonId" : "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json",
+          "catalogId" : "series::12ae3b0.tmdb.discover.series.streaming_disney_337_2.mo6w5u6l",
+          "type" : "movie"
+        }
+      },
+      "id" : "trakt.7389FDC1-F252-423C-A85B-93673A6EA0D8",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Disney+ Shows",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "addonCatalog",
+        "payload" : {
+          "addonId" : "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json",
+          "catalogId" : "movie::12ae3b0.tmdb.discover.movie.streaming_disney_337_2.mo6w5u6l",
+          "type" : "movie"
+        }
+      },
+      "id" : "trakt.44CB79FC-05E6-42DE-8D41-45722C290F1E",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Disney+ Movies",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "addonCatalog",
+        "payload" : {
+          "addonId" : "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json",
+          "catalogId" : "series::12ae3b0.tmdb.discover.series.streaming_netflix_8_0.mo6w5u6l",
+          "type" : "movie"
+        }
+      },
+      "id" : "trakt.007C72E3-2A8C-4310-93A7-25DB28676F7F",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Netflix Shows",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "addonCatalog",
+        "payload" : {
+          "addonId" : "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json",
+          "catalogId" : "movie::12ae3b0.tmdb.discover.movie.streaming_netflix_8_0.mo6w5u6l",
+          "type" : "movie"
+        }
+      },
+      "id" : "trakt.93605C12-9682-4E71-A497-E8C11E7BB123",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Netflix Movies",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "addonCatalog",
+        "payload" : {
+          "addonId" : "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json",
+          "catalogId" : "series::12ae3b0.tmdb.discover.series.streaming_prime_video_9_5.mo6w5u6l",
+          "type" : "movie"
+        }
+      },
+      "id" : "trakt.80A478F5-B0D8-478C-845E-ACD66FAB2512",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Prime Shows",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "addonCatalog",
+        "payload" : {
+          "addonId" : "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json",
+          "catalogId" : "movie::12ae3b0.tmdb.discover.movie.streaming_prime_video_9_5.mo6w5u6l",
+          "type" : "movie"
+        }
+      },
+      "id" : "trakt.63AFD49A-BEF6-4C21-82A4-6B8299A1395B",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Prime Movies",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "addonCatalog",
+        "payload" : {
+          "addonId" : "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json",
+          "catalogId" : "series::12ae3b0.tmdb.discover.series.streaming_apple_tv_350_4.mo6w5u6l",
+          "type" : "movie"
+        }
+      },
+      "id" : "trakt.E0386C98-9D76-4263-921B-BAFDAC54C6F0",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Apple TV+ Shows",
+      "type" : "row.classic"
+    },
+    {
+      "cacheTTL" : 3600,
+      "dataSource" : {
+        "kind" : "addonCatalog",
+        "payload" : {
+          "addonId" : "https:\/\/aiostreamsfortheweebs.midnightignite.me\/stremio\/97b0b43e-e19b-44e6-9aab-d81988307ebf\/eyJpIjoid1AzazV6Y21TRFJheVE3L09lTy9Ddz09IiwiZSI6Im5vdTZsNERrNno4U29FNDM3a0lOczdrYW9HMTQ1WEFtallPQUZYRXZCSjA9IiwidCI6ImEifQ\/manifest.json",
+          "catalogId" : "movie::12ae3b0.tmdb.discover.movie.streaming_apple_tv_350_4.mo6w5u6l",
+          "type" : "movie"
+        }
+      },
+      "id" : "trakt.05C4703A-BA67-4B03-A1D7-F85A8A6318D7",
+      "limit" : 50,
+      "presentation" : {
+        "aspectRatio" : "poster",
+        "badges" : {
+          "providers" : false,
+          "ratings" : true
+        },
+        "cardStyle" : "medium"
+      },
+      "title" : "Trending Apple TV+ Movies",
+      "type" : "row.classic"
+    },
+    {
+      "dataSource" : {
+        "kind" : "collection",
+        "payload" : {
+          "items" : [
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "MARVEL Cinematic Universe",
+                    "listSlug" : "marvel-cinematic-universe",
+                    "traktId" : 1248149,
+                    "username" : "Donxy"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "D6D80C64-D243-47C0-B463-B8FDB9A96A32",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/marvel%20studios.png?raw=true",
+              "title" : "Marvel Studios"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Star Wars Collection",
+                    "listSlug" : "star-wars-collection",
+                    "traktId" : 6,
+                    "username" : "Trakt"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "5AC5D6D8-367D-487B-B38A-0A8FED6D9E2F",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/0909a43a-512e-4c32-9e89-c699210e1e28.jpeg?raw=true",
+              "title" : "Starwars"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Deadpool Collection",
+                    "listSlug" : "deadpool-collection",
+                    "traktId" : 3513847,
+                    "username" : "Trakt"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "60BA4E2B-7819-4527-9681-53A94B4FE8F7",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/deadpoolcover.jpg?raw=true",
+              "title" : "Deadpool"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Harry Potter Collection",
+                    "listSlug" : "harry-potter-collection",
+                    "traktId" : 84,
+                    "username" : "Trakt"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "E1961B7E-3569-4026-8829-970DA79049AC",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/harry-potter-poster-v2.jpg?raw=true",
+              "title" : "Harry Potter"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "The Fast and the Furious Collection",
+                    "listSlug" : "the-fast-and-the-furious-collection",
+                    "traktId" : 75,
+                    "username" : "Trakt"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "6D431506-0D37-48E4-9CC6-FD498909C27C",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/ffcover.png?raw=true",
+              "title" : "Fast & The Furious"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "The Lord of the Rings Movies",
+                    "listSlug" : "the-lord-of-the-rings-movies",
+                    "traktId" : 22000291,
+                    "username" : "majeed_pk"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "355068F1-58E4-4471-A317-621C0BAA0D77",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/lotrposter.png?raw=true",
+              "title" : "Lord of the Rings"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Pirates of the Caribbean Collection",
+                    "listSlug" : "pirates-of-the-caribbean-collection",
+                    "traktId" : 10,
+                    "username" : "Trakt"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "C9D83A80-0A69-452F-A92E-DB8E8E8144AE",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/piratescover.png?raw=true",
+              "title" : "Pirates of the Caribbean"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Transformers Collection",
+                    "listSlug" : "transformers-collection",
+                    "traktId" : 176,
+                    "username" : "Trakt"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "553E328A-BB65-4296-8564-E48EF09D0CEF",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/transformers.png?raw=true",
+              "title" : "Transformers"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "Avatar Collection",
+                    "listSlug" : "avatar-collection",
+                    "traktId" : 884,
+                    "username" : "Trakt"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "094CCBCA-29FD-4D74-A992-B5E71D976FB2",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/avatar.png?raw=true",
+              "title" : "Avatar"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "traktList",
+                  "payload" : {
+                    "listName" : "DC Universe (James Gunn's DCU)",
+                    "listSlug" : "dc-universe-james-gunn-s-dcu",
+                    "traktId" : 31973827,
+                    "username" : "FistyTristy"
+                  }
+                }
+              ],
+              "hideTitle" : true,
+              "id" : "88F97D6D-B702-44D9-9BF1-F5D8F0E7E78D",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/github.com\/nbr097\/nbr097.github.io\/blob\/gh-pages\/public\/dc.jpg?raw=true",
+              "title" : "DC Universe"
+            }
+          ]
+        }
+      },
+      "id" : "collection.04E2E516-9BE2-4E3F-958D-BEC91493E887",
+      "title" : "Popular Movie Franchises",
+      "type" : "collection.row"
+    }
+  ]
+}
